@@ -1,0 +1,77 @@
+
+# model Layers width heads parameters
+# tiny   4     384    6        39M
+# Base   6     512    8        74M
+# Small  12    768    12       244M
+# Medium 24    1024   16       769M
+# Large  32    1280   20       1550M
+
+
+normalize: null
+#batch_type: numel
+#batch_bins: 10000000
+batch_size: 12
+accum_grad: 1
+max_epoch: 62
+patience: none
+init: none
+num_att_plot: 0
+
+val_scheduler_criterion:
+    - valid
+    - total_loss
+best_model_criterion:
+-   - valid
+    - total_loss
+    - min
+keep_nbest_models: 1
+
+model_conf:
+    report_cer: False
+    report_wer: False
+    output_dim: 1024
+    
+
+
+    #init_param: [
+    #"pretrained/valid.loss.ave_10best.pth:encoder:encoder",
+
+    #]
+    #
+
+freeze_param: [
+    "encoder.encoders",
+]
+ 
+encoder: whisper
+encoder_conf:
+    whisper_model: medium.en
+    hidden_dim: 1024
+    normalize: True
+    phone_layer: 8
+    word_layer: 16
+    utt_layer: 24
+
+    
+frontend: null
+input_size: 1
+
+use_amp: true
+cudnn_deterministic: false
+cudnn_benchmark: false
+
+optim: adamw
+grad_clip: 1.0
+optim_conf:
+    lr: 1.0e-05
+    weight_decay: 0.01
+    betas:
+    - 0.9
+    - 0.99
+    eps: 1.0e-06
+scheduler: warmuplr
+scheduler_conf:
+    warmup_steps: 1500
+
+
+
