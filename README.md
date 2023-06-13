@@ -45,7 +45,7 @@ whisper.load("large-v2")
 # Instructions for use
 ## Data preparation  
 1.If you are not interested in kaldi or you are not interested in the generation of alignment information, you can skip this step and proceed to the next step, we have provided Alignment information in the [dump](link: https://pan.baidu.com/s/1ZbTqaC5E8eOzDtEHQg8EKg extract code: 7777).
-2.Downlod the speechocean762 dataset from [speechocean762](https://www.openslr.org/101). Use your own Kaldi ASR model or public Kaldi ASR model (e.g., the Librispeech ASR Chain Model we used) and run Kaldi GOP recipe following its instruction. After the run finishs,you should be able to see ali_test and ali_train under the exp directory, which are the generated alignment information files, you can use the following commands to combine these files. 
+2.Downlod the speechocean762 dataset from [speechocean762](https://www.openslr.org/101). Use your own Kaldi ASR model or public Kaldi ASR model (e.g., the Librispeech ASR Chain Model we used) and run Kaldi GOP recipe following its instruction. After the run finishs,you should be able to see ali_test and ali_train under the exp directory, which are the generated alignment information files, you can use the following command to extract the alignment information of the training set and test set.
 ```
 kaldi_path=your_kaldi_path
 cd ${kaldi_path}/egs/speechocean/exp/ali_test
