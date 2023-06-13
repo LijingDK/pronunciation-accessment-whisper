@@ -29,9 +29,18 @@ Clone or download this repository and set it as working directory，open path.sh
 ```
 e.g. MAIN_ROOT=MAIN_ROOT=/mnt/data/lj/oriange/espnet-master  
 ```
-### Install Whisper
+### Whisper
+install Whisper
 ```
 pip install git+https://github.com/openai/whisper.git 
+```
+Load the pretrained model
+```
+import whisper
+whisper.load("base.en")
+whisper.load("small.en")
+whisper.load("medium.en")
+whisper.load("large-v2")
 ```
 # Instructions for use
 ## Data preparation  
