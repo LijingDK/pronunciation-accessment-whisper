@@ -4,8 +4,8 @@
 1.Kaldi (Data preparation related function script)[Github link](https://github.com/kaldi-asr/kaldi)  
 2.Espnet-0.10.4  
 3.Modify the installation address of espnet in the path.sh file  
-##Installation
-###Set up kaldi environment
+##Installation  
+###Set up kaldi environment  
 git clone -b 5.4 https://github.com/kaldi-asr/kaldi.git kaldi  
 cd kaldi/tools/; make; cd ../src; ./configure; make  
 ###Set up espnet environment
