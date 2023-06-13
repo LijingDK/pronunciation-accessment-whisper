@@ -58,3 +58,9 @@ cp -r espnet2/bin/gop_whisper_adapter.py ${espnet_path}/espnet2/bin
 cp -r espnet2/tasks/gop_whisper_adapter.py ${espnet_path}/espnet2/tasks
 cp -r espnet2/train/trainer_gop.py ${espnet_path}/espnet2/train
 ```
+## Run Training and Evaluation
+Run the following script.
+```
+bash run_lm_multi_whisper_three_adapter.sh
+```
+Results, best model, and log will be saved in the specified in .exp_whisper/
