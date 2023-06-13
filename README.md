@@ -18,16 +18,11 @@ ln -s {kaldi_root}      # Create link to Kaldi. e.g. ln -s home00/lijing/kaldi/
 ```
 ### Set up Conda environment  
 ```
-install conda
-wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh  # install conda
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
-
-
-./setup_anaconda.sh anaconda espnet 3.7.9   # Create a anaconda environmetn - espnet with Python 3.8.16  
-make TH_VERSION=1.8.0 CUDA_VERSION=10.2     # Install Pytorch and CUDA  
-. ./activate_python.sh; python3 check_install.py  # Check the installation  
-conda install torchvision==0.9.0 torchaudio==0.8.0 -c pytorch  
+conda create -y -n  lj  python=3.8.16    # create a environment
+conda activate lj
 ```
 ### Set your own execution environment
 ```
