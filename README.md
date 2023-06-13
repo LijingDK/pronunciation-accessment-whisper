@@ -25,12 +25,12 @@ conda create -y -n  lj  python=3.8.16    # create a environment
 conda activate lj
 ```
 ### Set your own execution environment
+Clone or download this repository and set it as working directory，open path.sh file, change your espnet directory.  
 ```
-Open path.sh file, change your espnet directory  
 e.g. MAIN_ROOT=MAIN_ROOT=/mnt/data/lj/oriange/espnet-master  
 ```
 # Instructions for use
 ## Data preparation  
-1.All the data used in the experiment are stored in the directory, in which train is used for training, valid is the verification set and test are used for testing respectively.```data```  
+1.All the data used in the experiment are stored in the directory, in which train is used for training, valid is the verification set and test are used for testing respectively.[dump](链接: https://pan.baidu.com/s/1ZbTqaC5E8eOzDtEHQg8EKg 提取码: 7777 复制这段内容后打开百度网盘手机App，操作更方便哦)  
 2.In order to better reproduce my experimental results, you can download the data set first, and then directly change the path in different sets in directory. 
-3.if you
+3.if you 
