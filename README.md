@@ -44,8 +44,8 @@ whisper.load("large-v2")
 ```
 # Instructions for use
 ## Data preparation  
-1.If you are not interested in kaldi or you are not interested in the generation of alignment information, you can skip this step and proceed to the next step, we have provided Alignment information in the [dump](link: https://pan.baidu.com/s/1ZbTqaC5E8eOzDtEHQg8EKg extract code: 7777).
-2.Downlod the speechocean762 dataset from [speechocean762](https://www.openslr.org/101). Use your own Kaldi ASR model or public Kaldi ASR model (e.g., the Librispeech ASR Chain Model we used) and run Kaldi GOP recipe following its instruction. After the run finishs,you should be able to see ali_test and ali_train under the exp directory, which are the generated alignment information files, you can use the following command to extract the alignment information of the training set and test set.
+If you are not interested in kaldi or you are not interested in the generation of alignment information, you can skip this data preparation and proceed to the next step, we have provided Alignment information in the [dump](link: https://pan.baidu.com/s/1ZbTqaC5E8eOzDtEHQg8EKg extract code: 7777). You can download the data set first, and then put the decompressed file directly under the 'pronunciation_whisper-main' main directory.  
+Downlod the speechocean762 dataset from [speechocean762](https://www.openslr.org/101). Use your own Kaldi ASR model or public Kaldi ASR model (e.g., the Librispeech ASR Chain Model we used) and run Kaldi GOP recipe following its instruction. After the run finishs,you should be able to see ali_test and ali_train under the exp directory, which are the generated alignment information files, you can use the following command to extract the alignment information of the training set and test set.
 ```
 kaldi_path=your_kaldi_path
 cd ${kaldi_path}/egs/speechocean/exp/ali_test
@@ -53,11 +53,7 @@ zcat ali-phone.{1..25}.gz > ali-test-phone.txt
 cd ${kaldi_path}/egs/speechocean/exp/ali_train
 zcat ali-phone.{1..25}.gz > ali-train-phone.txt
 ```
-Then, extract the GOP features from the intermediate files of the Kaldi GOP recipe run.
-
-1.All the data used in the experiment are stored in the directory. 
-2.In order to better reproduce my experimental results, you can download the data set first, and then put the decompressed file directly under the 'pronunciation_whisper-main' main directory. 
-3.Other files can remain unchanged, you can use it directly.
+Other files can remain unchanged, you can use it directly.
 ## Pronunciation Evaluation System
 1.Before running, you need to move the corresponding files of espnet2 to the directory corresponding to your 'espnet/espnet2' directory.
 ```
