@@ -6,7 +6,7 @@
 3.Modify the installation address of espnet in the path.sh file  
 ## Installation  
 ### Set up kaldi environment  
-```python  
+```
 git clone -b 5.4 https://github.com/kaldi-asr/kaldi.git kaldi  
 cd kaldi/tools/; make; cd ../src; ./configure; make  
 ### Set up espnet environment
