@@ -43,9 +43,9 @@ pip install git+https://github.com/openai/whisper.git
 ```
 espnet_path=your_espnet_path
 cd pronunciation_whisper-main/espnet2
-cp -r espnet2/asr/encoder/whisper_encoder_gop.py
-cp -r espnet2/asr/espnet_gop_multitask_model_whisper_adapter.py
-cp -r espnet2/bin/gop_whisper_adapter.py
-cp -r espnet2/tasks/gop_whisper_adapter.py
-cp -r espnet2/train/trainer_gop.py
+cp -r espnet2/asr/encoder/whisper_encoder_gop.py ${espnet_path}/espnet2/asr/encoder
+cp -r espnet2/asr/espnet_gop_multitask_model_whisper_adapter.py ${espnet_path}/espnet2/asr
+cp -r espnet2/bin/gop_whisper_adapter.py ${espnet_path}/espnet2/bin
+cp -r espnet2/tasks/gop_whisper_adapter.py ${espnet_path}/espnet2/tasks
+cp -r espnet2/train/trainer_gop.py ${espnet_path}/espnet2/train
 ```
