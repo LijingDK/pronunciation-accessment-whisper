@@ -9,11 +9,13 @@
 ```
 git clone -b 5.4 https://github.com/kaldi-asr/kaldi.git kaldi  
 cd kaldi/tools/; make; cd ../src; ./configure; make  
+```
 ### Set up espnet environment
 ```
 git clone -b v.0.10.4 https://github.com/espnet/espnet.git  
 cd espnet/tools/        # change to tools folder  
 ln -s {kaldi_root}      # Create link to Kaldi. e.g. ln -s home/theanhtran/kaldi/  
+```
 ### Set up Conda environment  
 ```
 ./setup_anaconda.sh anaconda espnet 3.7.9   # Create a anaconda environmetn - espnet with Python 3.7.9  
@@ -24,4 +26,5 @@ conda install torchvision==0.9.0 torchaudio==0.8.0 -c pytorch
 ```
 Open path.sh file, change your espnet directory  
 e.g. MAIN_ROOT=MAIN_ROOT=/mnt/data/lj/oriange/espnet-master  
+```
 
