@@ -32,4 +32,5 @@ e.g. MAIN_ROOT=MAIN_ROOT=/mnt/data/lj/oriange/espnet-master
 # Instructions for use
 ## Data preparation  
 1.All the data used in the experiment are stored in the directory, in which train is used for training, valid is the verification set and test are used for testing respectively.```data```  
-2.In order to better reproduce my experimental results, you can download the data set first, and then directly change the path in in different sets in directory. 
+2.In order to better reproduce my experimental results, you can download the data set first, and then directly change the path in different sets in directory. 
+3.if you
