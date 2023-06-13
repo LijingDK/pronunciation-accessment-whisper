@@ -10,7 +10,7 @@
 git clone -b 5.4 https://github.com/kaldi-asr/kaldi.git kaldi  
 cd kaldi/tools/; make; cd ../src; ./configure; make  
 ### Set up espnet environment
-```python
+```
 git clone -b v.0.10.4 https://github.com/espnet/espnet.git  
 cd espnet/tools/        # change to tools folder  
 ln -s {kaldi_root}      # Create link to Kaldi. e.g. ln -s home/theanhtran/kaldi/  
