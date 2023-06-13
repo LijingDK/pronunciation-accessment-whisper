@@ -44,7 +44,12 @@ whisper.load("large-v2")
 ```
 # Instructions for use
 ## Data preparation  
-1.All the data used in the experiment are stored in the directory[dump](链接: https://pan.baidu.com/s/1ZbTqaC5E8eOzDtEHQg8EKg 提取码: 7777). 
+1.If you are not interested in kaldi or you are not interested in the generation of alignment information, you can skip this step and proceed to the next step, we have provided Alignment information in the [dump](link: https://pan.baidu.com/s/1ZbTqaC5E8eOzDtEHQg8EKg extract code: 7777).
+2.Downlod the speechocean76 dataset from [speechocean762](https://www.openslr.org/101). Use your own Kaldi ASR model or public Kaldi ASR model (e.g., the Librispeech ASR Chain Model we used) and run Kaldi GOP recipe following its instruction. After the run finishs, you should see the perfrmance of the baseline model with the ASR model you use.
+
+Then, extract the GOP features from the intermediate files of the Kaldi GOP recipe run.
+
+1.All the data used in the experiment are stored in the directory. 
 2.In order to better reproduce my experimental results, you can download the data set first, and then put the decompressed file directly under the 'pronunciation_whisper-main' main directory. 
 3.Other files can remain unchanged, you can use it directly.
 ## Pronunciation Evaluation System
