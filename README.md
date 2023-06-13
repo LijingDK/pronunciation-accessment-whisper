@@ -19,4 +19,6 @@ make TH_VERSION=1.8.0 CUDA_VERSION=10.2     # Install Pytorch and CUDA
 conda install torchvision==0.9.0 torchaudio==0.8.0 -c pytorch  
 ### Set your own execution environment
 Open path.sh file, change your espnet directory  
-e.g. MAIN_ROOT=MAIN_ROOT=/mnt/data/lj/oriange/espnet-master
+e.g. MAIN_ROOT=MAIN_ROOT=/mnt/data/lj/oriange/espnet-master  
+```python
+print("Hello, world!")
