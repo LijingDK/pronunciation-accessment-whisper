@@ -1,6 +1,4 @@
-#MAIN_ROOT=/home3/lirui001/w2022/github/espnet
 MAIN_ROOT=/mnt/data/lj/oriange/espnet-master
-#MAIN_ROOT=/home3/lirui001/espnet
 KALDI_ROOT=$MAIN_ROOT/tools/kaldi
 
 export PATH=$PWD/utils/:$KALDI_ROOT/tools/openfst/bin:$PATH
