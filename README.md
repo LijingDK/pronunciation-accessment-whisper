@@ -22,6 +22,7 @@ ln -s {kaldi_root}      # Create link to Kaldi. e.g. ln -s home/theanhtran/kaldi
 make TH_VERSION=1.8.0 CUDA_VERSION=10.2     # Install Pytorch and CUDA  
 . ./activate_python.sh; python3 check_install.py  # Check the installation  
 conda install torchvision==0.9.0 torchaudio==0.8.0 -c pytorch  
+```
 ### Set your own execution environment
 ```
 Open path.sh file, change your espnet directory  
