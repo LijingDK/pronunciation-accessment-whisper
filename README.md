@@ -21,7 +21,7 @@ ln -s {kaldi_root}      # Create link to Kaldi. e.g. ln -s home00/lijing/kaldi/
 wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh  # install conda
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
-conda create -y -n  lj  python=3.8.16    # create a environment
+conda create -y -n  new_envo  python=3.8.16    # create a environment
 conda activate lj
 ```
 ### Set your own execution environment
