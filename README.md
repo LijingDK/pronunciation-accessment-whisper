@@ -22,7 +22,7 @@ wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-L
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 conda create -y -n  new_envo  python=3.8.16    # create a environment
-conda activate lj
+conda activate new_envo
 ```
 ### Set your own execution environment
 Clone or download this repository and set it as working directory，open path.sh file, change your espnet directory.  
