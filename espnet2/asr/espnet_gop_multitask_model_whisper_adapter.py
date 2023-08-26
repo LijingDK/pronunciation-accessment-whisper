@@ -335,12 +335,16 @@ class Adapter(nn.Module):
         super(Adapter, self).__init__()
         self.fc1 = nn.Linear(input_dim, hidden_dim)
         self.relu = nn.ReLU()
-        self.fc2 = nn.Linear(hidden_dim, output_dim)
+        self.fc2 = nn.Linear(hidden_dim, input_dim)
+        self.fc2 = nn.Linear(input_dim, output_dim)
 
     def forward(self, x):
+        res = x
         out = self.fc1(x)
         out = self.relu(out)
         out = self.fc2(out)
+        out = res + out
+        out = self.fc3(out)
         return out
 
 class ESPnetGOPModel(AbsESPnetModel):
