@@ -832,8 +832,6 @@ class Trainer:
 
         logging.warning(f"********************")
         logging.warning(f"Test sets  2500 utterance:")
-        logging.warning(f"Phone MSE: {phone_mse}    Phone_PCC: {phone_pcc}")
-        logging.warning(f"Word MSE: {word_mse}    Word PCC: {word_pcc}")
         logging.warning(f"Utt MSE: {utt_mse}    Utt PCC: {utt_pcc}")
 
 
